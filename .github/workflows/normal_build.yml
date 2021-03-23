@@ -1,4 +1,4 @@
-name: Release_build_Lock
+name: Normal_build
 
 on:
   workflow_dispatch:
