@@ -1,4 +1,9 @@
 
+name: Release_build_Lock
+
+on:
+  workflow_dispatch:
+  watch:
     types: started
   repository_dispatch:
     types: relase_build
