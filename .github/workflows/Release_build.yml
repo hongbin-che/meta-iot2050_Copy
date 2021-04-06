@@ -1,8 +1,4 @@
-name: Release_build_Lock
 
-on:
-  workflow_dispatch:
-  watch:
     types: started
   repository_dispatch:
     types: relase_build
@@ -79,10 +75,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
-      - name: Basic
-        run: ./kas-container  build kas-iot2050-boot-basic.yml:kas/opt/package-lock.yml 2>&1 | tee -a  ./build_basic_bootloader.log
       - name: Advanced
-        run: ./kas-container  build kas-iot2050-boot-advanced.yml:kas/opt/package-lock.yml 2>&1 | tee -a  ./build_advance_bootloader.log
+        run: ./kas-container  build kas-iot2050-boot-advanced.yml:upstream:kas/opt/package-lock.yml 2>&1 | tee -a  ./build_advance_bootloader.log
       - name: Archive bootloaders
         uses: actions/upload-artifact@v2
         with:
