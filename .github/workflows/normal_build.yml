@@ -80,7 +80,7 @@ jobs:
         with:
           ref: master
       - name: Advanced
-        run: ./kas-container  build kas-iot2050-boot-advanced.yml:kas/opt/upsteam.yml  2>&1 | tee -a  ./build_advance_bootloader.log
+        run: ./kas-container  build kas-iot2050-boot-advanced.yml:kas/opt/upstream.yml 2>&1 | tee -a  ./build_advance_bootloader.log
       - name: Archive bootloaders
         uses: actions/upload-artifact@v2
         with:
