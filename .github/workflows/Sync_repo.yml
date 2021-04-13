@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/siemens/meta-iot2050.git"
-          source_branch: "su/snapshot-limit"
-          destination_branch: "su/snapshot-limit"
+          source_branch: "release"
+          destination_branch: "release"
           github_token: ${{ secrets.PAT }}
