@@ -1,5 +1,5 @@
 
-name: Release_build_Lock
+name: Release_build_Lock_master
 
 on:
   workflow_dispatch:
