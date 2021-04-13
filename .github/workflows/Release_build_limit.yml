@@ -1,5 +1,5 @@
 
-name: Release_build_Lock_limit
+name: Release_build_Lock_limit_release
 
 on:
   workflow_dispatch:
