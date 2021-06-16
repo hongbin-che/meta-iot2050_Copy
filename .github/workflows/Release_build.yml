@@ -18,7 +18,7 @@ jobs:
         with:
           ref: master
       - name: Build image
-        run: ./kas-container build  kas-iot2050-example.yml:kas/opt/package-lock.yml 2>&1 | tee -a ./build_example-image.log
+        run: ./kas-container build  kas-iot2050-example.yml 2>&1 | tee -a ./build_example-image.log
       - name: Upload image
         uses: actions/upload-artifact@v2
         with:
@@ -39,7 +39,7 @@ jobs:
         with:
           ref: master
       - name: Build RT image
-        run: ./kas-container  build  kas-iot2050-example.yml:kas/opt/preempt-rt.yml:kas/opt/package-lock.yml 2>&1 | tee -a ./build_RT-example-image.log
+        run: ./kas-container  build  kas-iot2050-example.yml:kas/opt/preempt-rt.yml 2>&1 | tee -a ./build_RT-example-image.log
       - name: Upload image
         uses: actions/upload-artifact@v2
         with:
@@ -60,7 +60,7 @@ jobs:
         with:
           ref: master
       - name: Build SDK
-        run: ./kas-container  build kas-iot2050-example.yml:kas/opt/sdk.yml:kas/opt/package-lock.yml 2>&1 | tee -a  ./build_SDK.log && ls -l build/tmp/deploy/images/iot2050/
+        run: ./kas-container  build kas-iot2050-example.yml:kas/opt/sdk.yml 2>&1 | tee -a  ./build_SDK.log && ls -l build/tmp/deploy/images/iot2050/
       - name: Archive sdk
         uses: actions/upload-artifact@v2
         with:
@@ -81,7 +81,7 @@ jobs:
         with:
           ref: master
       - name: Advanced
-        run: ./kas-container  build kas-iot2050-boot-advanced.yml:kas/opt/upstream.yml:kas/opt/package-lock.yml 2>&1 | tee -a  ./build_advance_bootloader.log
+        run: ./kas-container  build kas-iot2050-boot-advanced.yml:kas/opt/upstream.yml 2>&1 | tee -a  ./build_advance_bootloader.log
       - name: Archive bootloaders
         uses: actions/upload-artifact@v2
         with:
