@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: iot2050-example-image
-          path: build/tmp/deploy/images/iot2050/iot2050-image-example-iot2050-debian-iot2050.wic.img*
+          path: build/tmp/deploy/images/iot2050/iot2050-image-example-iot2050-debian-iot2050.wic.img
       - name: Upload example build log
         uses: actions/upload-artifact@v2
         with:
@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: iot2050-example-image-rt
-          path: build/tmp/deploy/images/iot2050/iot2050-image-example-iot2050-debian-iot2050.wic.img*
+          path: build/tmp/deploy/images/iot2050/iot2050-image-example-iot2050-debian-iot2050.wic.img
       - name: Upload RT example build log
         uses: actions/upload-artifact@v2
         with:
