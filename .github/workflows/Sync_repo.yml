@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/siemens/meta-iot2050.git"
-          source_branch: "chao/unify-uboot-update-kernel"
-          destination_branch: "chao/unify-uboot-update-kernel"
+          source_branch: "master"
+          destination_branch: "master"
           github_token: ${{ secrets.PAT }}
