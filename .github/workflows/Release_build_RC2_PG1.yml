@@ -1,5 +1,5 @@
 
-name: Release_build_RC1
+name: Release_build_RC2_PG1
 
 on:
   workflow_dispatch:
