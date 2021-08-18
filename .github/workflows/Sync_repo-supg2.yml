@@ -1,4 +1,4 @@
-name: Sync Siemens iot2050 repo - chao/unify
+name: Sync Siemens iot2050 repo - su/pg2
 on:
   workflow_dispatch:
   #watch:
